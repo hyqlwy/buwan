@@ -475,7 +475,7 @@
             <div class="icon-wrap">
                 <i class="fas fa-gamepad"></i>
             </div>
-            <h1>加入一中补完计划</h1>
+            <h1>加入补完计划</h1>
             <div class="subtitle">✦ 输入你的凭证 ✦</div>
         </div>
 
@@ -522,8 +522,8 @@
                     password: '05ngca',
                     redirect: 'admin.html'   // 管理员后台
                 },
-                'user': {
-                    password: '123456',
+                'inner': {
+                    password: ' Silent Hill',
                     redirect: 'user.html'    // 普通用户主页
                 }
                 // 可以继续添加更多账号，例如：
@@ -654,7 +654,7 @@
             // 找回秘钥演示
             document.querySelector('.forgot-link').addEventListener('click', function(e) {
                 e.preventDefault();
-                messageEl.innerHTML = '<i class="fas fa-feather-alt"></i> 找不到了喵~';
+                messageEl.innerHTML = '<i class="fas fa-feather-alt"></i> 找到了喵~ ID:outer 密钥：05ngca';
                 messageEl.className = 'form-message';
                 setTimeout(() => {
                     messageEl.textContent = '';
